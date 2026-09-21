@@ -4,8 +4,8 @@ import SplitText from './SplitText.jsx'
 const headingWords = [
   { text: 'WANT' },
   { text: 'MORE' },
-  { text: 'THAN' },
-  { text: 'A' },
+  { text: 'THAN ' },
+  { text: 'JUST   A' },
   { text: 'VIDEO?', break: true },
   { text: 'WE' },
   { text: 'CREATE ' },

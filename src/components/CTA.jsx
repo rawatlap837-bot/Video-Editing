@@ -26,9 +26,6 @@ export default function CTA() {
                 words={headingWords}
                 className="mt-2 font-display text-3xl leading-tight text-ink sm:text-4xl"
               />
-              <p className="mt-3 text-sm text-ink/70">
-                {site.email} · {site.phone}
-              </p>
             </div>
             <BookingButtons variant="onLime" />
           </div>

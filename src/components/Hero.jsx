@@ -12,7 +12,7 @@ const stats = [
 ]
 
 // const line1Words = [{ text: 'YOUR' }]
-const accentWords = [{ text: 'A' }, { text: 'VIDEO' }, { text: 'EDITING' }, { text: 'STUDIO' }]
+const accentWords = [{ text: 'WE' }, { text: 'CREATE' }, { text: 'THE ' }, { text: 'DIFFERENCE' }]
 const line2Words = [{ text: 'GREAT IDEAS,' }, { text: 'DESERVE GREAT FILMS.' }]
 const line3Words = [{ text: 'THE DIFFERENCE.' }]
 

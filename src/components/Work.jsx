@@ -42,9 +42,9 @@ export default function Work() {
             />
             <a
               href="https://drive.google.com/drive/folders/1T5-0AVRnysX9go2x2A431u41dH8a98y3"
-              className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold tracking-wide text-white transition-colors hover:border-lime hover:text-lime"
+              className="rounded-full border border-lime bg-lime px-6 py-3 text-sm font-bold tracking-wide text-ink transition-colors hover:bg-lime/90"
             >
-              VIEW FULL REEL
+              VIEW FULL PORTFOLIO
             </a>
           </div>
 

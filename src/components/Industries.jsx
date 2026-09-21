@@ -20,7 +20,7 @@ const stats = [
   { number: 1200, suffix: '+', label: 'Videos delivered' },
   { number: 48, suffix: 'hr', label: 'Average turnaround' },
   { number: 90, suffix: '%', label: 'Recurring Clients' },
-  { number: 10, suffix: '+', label: 'Formats covered' },
+  { number: 10, suffix: '+', label: 'Formats Mastered' },
 ]
 
 export default function Industries() {

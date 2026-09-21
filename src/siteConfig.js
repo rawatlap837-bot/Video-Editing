@@ -2,7 +2,7 @@
 // Everything a client will actually want to change lives here.
 
 export const site = {
-  brandName: 'CUTLAB',
+  brandName: 'Automation Titan Creative Studio',
   brandTag: 'VIDEO EDITING',
 
   // Strategy call booking links
@@ -12,8 +12,7 @@ export const site = {
   },
 
   email: 'contact@automationtitan.net',
-  phone: '+91 99111 62210',
-  address: 'Faridabad, India — serving UK, US & India',
+  address: 'India — serving UK, US & India',
   website: 'https://automationtitan.net',
 
   socials: {
