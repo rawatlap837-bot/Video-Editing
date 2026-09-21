@@ -6,7 +6,7 @@ const headingWords = [
   { text: 'EDITING' },
   { text: 'TEAM.', break: true },
   { text: 'EVERY' },
-  { text: 'FORMAT', highlight: true },
+  { text: 'STORY', highlight: true },
   { text: 'YOU' },
   { text: 'NEED.' },
 ]

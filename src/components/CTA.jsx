@@ -5,10 +5,10 @@ import SplitText from './SplitText.jsx'
 
 const headingWords = [
   { text: "LET'S" },
-  { text: 'CUT' },
-  { text: 'SOMETHING', break: true },
-  { text: 'WORTH' },
-  { text: 'WATCHING' },
+  { text: 'BRING' },
+  { text: 'YOUR', break: true },
+  { text: 'VISION TO LIFE' },
+
 ]
 
 export default function CTA() {
@@ -19,7 +19,7 @@ export default function CTA() {
           <div className="flex flex-col items-center gap-8 rounded-3xl bg-lime px-8 py-12 text-center md:flex-row md:justify-between md:text-left">
             <div>
               <span className="text-xs font-bold tracking-[0.2em] text-ink/60">
-                START YOUR NEXT EDIT
+                READY TO MAKE AN IMPACT?
               </span>
               <SplitText
                 as="h2"

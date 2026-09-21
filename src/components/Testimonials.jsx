@@ -11,24 +11,23 @@ const headingWords = [
 const quotes = [
   {
     quote:
-      'We went from posting once a week to daily shorts without hiring anyone in-house. The turnaround is the whole reason it works.',
-    name: 'Placeholder Name',
+      'We went from posting once a week to consistent, high-quality content. The edits feel sharp, intentional, and built for retention.',
+    name: 'WAYTT THOMAS',
     role: 'YouTube Creator',
   },
   {
     quote:
-      'They took a raw Zoom recording and turned it into a brand film we actually use in sales calls. Genuinely didn\'t expect that.',
-    name: 'Placeholder Name',
-    role: 'Founder, SaaS Company',
+      'They understood the vision from the start and turned raw footage into content that actually feels like my brand.',
+    name: 'REEVA CREATES',
+    role: 'Content Creator',
   },
   {
     quote:
-      'Faceless channel went from a stalled idea to three uploads a week. The pacing and hooks are why the retention finally moved.',
-    name: 'Placeholder Name',
-    role: 'Faceless Channel Owner',
+      'From storytelling to pacing and visuals, they brought a level of polish that completely elevated our content.',
+    name: 'RORY KERAN',
+    role: 'Content Creator / Founder',
   },
-]
-
+];
 export default function Testimonials() {
   return (
     <section className="border-t border-white/5 bg-ink py-16 md:py-24">

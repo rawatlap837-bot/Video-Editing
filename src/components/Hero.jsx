@@ -8,13 +8,13 @@ import FloatingOrbs from './FloatingOrbs.jsx'
 const stats = [
   { number: 1200, suffix: '+', label: 'VIDEOS EDITED' },
   { number: 48, suffix: 'HR', label: 'AVG. TURNAROUND' },
-  { number: 7, suffix: '', label: 'FORMATS MASTERED' },
+  { number: 10, suffix: '+', label: 'FORMATS MASTERED' },
 ]
 
-const line1Words = [{ text: 'YOUR' }]
+// const line1Words = [{ text: 'YOUR' }]
 const accentWords = [{ text: 'A' }, { text: 'VIDEO' }, { text: 'EDITING' }, { text: 'STUDIO' }]
-const line2Words = [{ text: 'OUR' }, { text: 'EDIT.' }]
-const line3Words = [{ text: 'THEIR' }, { text: 'ATTENTION.' }]
+const line2Words = [{ text: 'GREAT IDEAS,' }, { text: 'DESERVE GREAT FILMS.' }]
+const line3Words = [{ text: 'THE DIFFERENCE.' }]
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
@@ -64,16 +64,15 @@ export default function Hero() {
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 px-5 pb-14 pt-8 sm:px-8 sm:pb-16 sm:pt-10 md:grid-cols-2 md:gap-6 md:px-10 md:pb-24 md:pt-16 lg:px-12">
         {/* Left: copy */}
         <div className="relative z-10">
-          <h1 className="font-display leading-[0.9] text-white text-[13vw] xs:text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[6rem] [text-wrap:balance]">
+          <h1 className="font-display leading-[0.95] text-white text-[10vw] xs:text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[4rem] [text-wrap:balance] max-w-[90%] md:max-w-[600px]">
             <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1 sm:gap-x-4 sm:gap-y-2">
-              <SplitText as="span" eager staggerMs={55} words={line1Words} className="inline-block" />
               <SplitText
                 as="span"
                 eager
                 staggerMs={55}
                 startDelayMs={160}
                 words={accentWords}
-                className="inline-block align-middle font-display text-lime text-sm tracking-wide sm:text-lg md:text-base lg:text-xl xl:text-2xl"
+                className="inline-block align-middle font-display text-lime text-xs tracking-wide sm:text-sm md:text-xs lg:text-sm xl:text-base"
               />
             </span>
             <SplitText as="span" eager staggerMs={55} startDelayMs={320} words={line2Words} className="block" />
@@ -134,8 +133,7 @@ export default function Hero() {
             }
             style={enterStyle(920)}
           >
-            WE CUT LONG FORM, SHORT FORM, FACELESS, AI, BRAND FILM, STORYTELLING AND TALKING
-            HEAD VIDEO — CONTENT THAT ACTUALLY GETS WATCHED.
+            FROM CONCEPT TO FINAL CUT, WE CREATE FILMS THAT MAKE BRANDS STAND OUT.
           </p>
         </div>
 

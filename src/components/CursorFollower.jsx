@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 
 const TRAIL_SIZE = 10
-const EASE = 0.14
+const EASE = 0.28
 
 /**
  * A lime-green cursor made of several trailing circles that chase the real
  * pointer with staggered lag, forming a tapering comet-like streak of crisp
- * (non-blurred) circles. Grows over links/buttons, and emits a pulse ring
- * on click. Disables itself entirely on touch devices and when the user
- * has requested reduced motion — the native cursor is left alone there.
+ * (non-blurred) circles. Emits a pulse ring on click. Disables itself
+ * entirely on touch devices and when the user has requested reduced
+ * motion — the native cursor is left alone there.
  */
 export default function CursorFollower() {
   const trailRefs = useRef([])
@@ -97,12 +97,9 @@ export default function CursorFollower() {
           aria-hidden="true"
           className={
             'pointer-events-none fixed left-0 top-0 z-[999] rounded-full ' +
-            'transition-[width,height,opacity] duration-200 ease-out ' +
-            (hovering
-              ? 'h-24 w-24 border-2 border-lime bg-lime/10 '
-              : i === 0
-              ? 'h-8 w-8 bg-lime '
-              : 'h-10 w-10 bg-lime ')
+            'transition-opacity duration-150 ease-out ' +
+            (i === 0 ? 'h-8 w-8 bg-lime ' : 'h-10 w-10 bg-lime ') +
+            (hovering ? 'bg-lime/70 ' : '')
           }
           style={{
             opacity: visible ? Math.max(1 - i * (0.9 / TRAIL_SIZE), 0.06) : 0,

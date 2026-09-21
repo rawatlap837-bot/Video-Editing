@@ -6,29 +6,30 @@ const headingWords = [
   { text: 'MORE' },
   { text: 'THAN' },
   { text: 'A' },
-  { text: 'CUT?', break: true },
+  { text: 'VIDEO?', break: true },
   { text: 'WE' },
-  { text: 'HANDLE' },
-  { text: 'THAT' },
-  { text: 'TOO.', highlight: true },
+  { text: 'CREATE ' },
+  { text: 'THE' },
+  { text: 'WHOLE' },
+  { text: 'EXPERIENCE.', highlight: true },
 ]
 
 const extras = [
   {
-    title: 'Thumbnails & Titles',
-    desc: 'Click-worthy thumbnails and titles tested against what already works in your niche.',
+    title: 'CONCEPT & IDEATION',
+    desc: 'Ideas, creative direction and concepts built around your brand.',
   },
   {
-    title: 'Scripting & Structure',
-    desc: 'Hooks, story beats and pacing planned before a single clip gets cut.',
+    title: 'SCRIPT & STORY',
+    desc: 'Strong narratives, hooks and storytelling that keep viewers engaged.',
   },
   {
-    title: 'Motion Graphics & Captions',
-    desc: 'Animated captions, lower-thirds and graphics that keep every second earning attention.',
+    title: 'PRODUCTION & SHOOT',
+    desc: 'Cinematography, lighting, sound and direction handled end to end.',
   },
   {
-    title: 'Multi-Platform Repurposing',
-    desc: 'One shoot, cut down into every format your channels actually need.',
+    title: 'EDIT & FINISH',
+    desc: 'Editing, motion graphics, sound design and colour, all under one roof.',
   },
 ]
 

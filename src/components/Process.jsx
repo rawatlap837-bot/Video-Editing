@@ -2,19 +2,34 @@ import Reveal from './Reveal.jsx'
 import SplitText from './SplitText.jsx'
 
 const headingWords = [
-  { text: 'FOOTAGE' },
-  { text: 'IN.', break: true },
-  { text: 'CONTENT', highlight: true },
-  { text: 'OUT.' },
+  { text: 'FROM AN' },
+  { text: 'IDEA TO SOMETHING', break: true },
+  { text: 'PEOPLE', highlight: true },
+  { text: 'CAN`T IGNORE.' },
 ]
 
 const steps = [
-  { title: 'Upload & Brief', desc: 'Drop your raw footage and a short brief into a shared folder — no calls required to start.' },
-  { title: 'Rough Cut', desc: 'Your editor delivers a first pass within 48 hours, structured around your brief.' },
-  { title: 'Review & Revise', desc: 'Leave timestamped notes right on the cut. Revisions come back same day.' },
-  { title: 'Final Delivery', desc: 'Color, sound and captions locked, exported in every size your platforms need.' },
-  { title: 'Repurpose & Scale', desc: 'Long form gets cut down into short form clips so one shoot fuels every channel.' },
-]
+  {
+    title: 'IDEATE:',
+    desc: 'Start with the big idea and define the story’s direction.'
+  },
+  {
+    title: 'CREATE:',
+    desc: 'Turn ideas into compelling visuals that capture attention.'
+  },
+  {
+    title: 'PRODUCE:',
+    desc: 'Bring the story to life with engaging motion and sound.'
+  },
+  {
+    title: 'POLISH:',
+    desc: 'Perfect every frame with detail, precision, and creative finesse.'
+  },
+  {
+    title: 'DELIVER:',
+    desc: 'Make every video ready to perform beautifully on every screen.'
+  },
+];  
 
 export default function Process() {
   return (

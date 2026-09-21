@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { site } from '../siteConfig.js'
+import ATS1 from '../assets/ATS1.png'
 
 function IconCircle({ children, href = '#' }) {
   return (
@@ -65,13 +66,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2">
-          <svg viewBox="0 0 24 24" className="h-7 w-7 fill-lime">
-            <path d="M4 6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zm12 2.2 5-2.6v13l-5-2.6V8.2z" />
-          </svg>
-          <div className="leading-none">
-            <div className="font-display text-xl tracking-wide text-white">{site.brandName}</div>
-            <div className="text-[10px] font-semibold tracking-[0.3em] text-lime">{site.brandTag}</div>
-          </div>
+          <img src={ATS1} alt="logo" className="h-10 w-auto object-contain" />
         </a>
 
         {/* Center nav (desktop) */}

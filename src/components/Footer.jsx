@@ -1,6 +1,7 @@
 import { site } from '../siteConfig.js'
 import BookingButtons from './BookingButtons.jsx'
 import Reveal from './Reveal.jsx'
+import ATS2 from '../assets/ATS2.png'
 
 // Same anchors as the navbar — footer nav should never drift from it.
 const quickLinks = [
@@ -28,13 +29,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2">
-                <svg viewBox="0 0 24 24" className="h-7 w-7 fill-lime">
-                  <path d="M4 6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zm12 2.2 5-2.6v13l-5-2.6V8.2z" />
-                </svg>
-                <div className="leading-none">
-                  <div className="font-display text-xl tracking-wide text-white">{site.brandName}</div>
-                  <div className="text-[10px] font-semibold tracking-[0.3em] text-lime">{site.brandTag}</div>
-                </div>
+                <img src={ATS2} alt="logo" className="h-10 w-auto object-contain" />
               </div>
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
                 A video editing studio for creators and brands — long form, short form,
