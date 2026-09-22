@@ -12,9 +12,9 @@ const stats = [
 ]
 
 // const line1Words = [{ text: 'YOUR' }]
-const accentWords = [{ text: 'WE' }, { text: 'CREATE' }, { text: 'THE ' }, { text: 'DIFFERENCE' }]
+const accentWords = [{ text: 'A' }, { text: 'VIDEO' }, { text: 'EDITING' }, { text: 'STUDIO' }]
 const line2Words = [{ text: 'GREAT IDEAS,' }, { text: 'DESERVE GREAT FILMS.' }]
-const line3Words = [{ text: 'THE DIFFERENCE.' }]
+const line3Words = [{ text: 'WE CREATE THE DIFFERENCE.' }]
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
