@@ -89,7 +89,14 @@ export default function Hero() {
                 <path d="M8 5v14l11-7z" />
               </svg>
             </a>
-            <div className="h-14 flex-1 max-w-xs rounded-full border border-lime/60 sm:h-16" />
+            <a
+              href="https://drive.google.com/drive/folders/1T5-0AVRnysX9go2x2A431u41dH8a98y3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-14 flex-1 max-w-xs items-center justify-center rounded-full border border-lime/60 text-xl font-medium tracking-wide text-lime transition-colors hover:bg-lime/10 sm:h-16"
+            >
+              See our work
+            </a>
           </div>
 
           <div className={'mt-8 grid grid-cols-3 divide-x divide-white/15 sm:mt-10 ' + enterClass} style={enterStyle(760)}>
