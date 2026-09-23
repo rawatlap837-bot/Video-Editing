@@ -95,7 +95,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="flex h-14 flex-1 max-w-xs items-center justify-center rounded-full border border-lime/60 text-xl font-medium tracking-wide text-lime transition-colors hover:bg-lime/10 sm:h-16"
             >
-              Explore Our Work
+              Explore Our Portfolio
             </a>
           </div>
 

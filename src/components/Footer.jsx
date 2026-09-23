@@ -1,7 +1,7 @@
 import { site } from '../siteConfig.js'
 import BookingButtons from './BookingButtons.jsx'
 import Reveal from './Reveal.jsx'
-import ATS2 from '../assets/ATS1.png'
+import ATS2 from '../assets/ATS2.png'
 
 // Same anchors as the navbar — footer nav should never drift from it.
 const quickLinks = [
