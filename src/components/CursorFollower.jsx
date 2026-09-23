@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 
 const TRAIL_SIZE = 9 // trailing comet particles, NOT including the core dot
-const EASE = 0.28
+const EASE = 0.14 // lower = slower/smoother trail lag behind the core
 
 /**
  * A lime-green custom cursor: a precise CORE dot that always sits exactly

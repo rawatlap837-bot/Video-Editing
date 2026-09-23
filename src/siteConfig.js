@@ -12,7 +12,7 @@ export const site = {
   },
 
   email: 'contact@automationtitan.net',
-  address: 'Serving UK, US & India',
+  address: 'Serving UK, US & INDIA',
   website: 'https://automationtitan.net',
 
   socials: {

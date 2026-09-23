@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-30 w-full bg-ink/90 backdrop-blur">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-6 md:px-12">
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-1 md:px-12">
         {/* Social icons */}
         <div className="hidden items-center gap-3 lg:flex">
           <IconCircle href={site.socials.facebook}>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2">
-          <img src={ATS1} alt="logo" className="h-16 w-auto object-contain" />
+          <img src={ATS1} alt="logo" className="h-12 sm:h-20 w-auto object-contain" />
         </a>
 
         {/* Center nav (desktop) */}

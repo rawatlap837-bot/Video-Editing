@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2">
-                <img src={ATS2} alt="logo" className="h-12 w-auto object-contain" />
+                <img src={ATS2} alt="logo" className="h-20 w-auto object-contain" />
               </div>
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
                 A video editing studio for creators and brands — long form, short form,
