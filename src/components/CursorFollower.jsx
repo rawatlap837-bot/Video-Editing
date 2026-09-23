@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 
 const TRAIL_SIZE = 9 // trailing comet particles, NOT including the core dot
-const EASE = 0.14 // lower = slower/smoother trail lag behind the core
+const EASE_MIN = 0.35 // ease for the particle closest to the core (fastest response)
+const EASE_MAX = 0.55 // ease for the tail-most particle (fastest overall so it doesn't lag far behind)
 
 /**
  * A lime-green custom cursor: a precise CORE dot that always sits exactly
@@ -46,6 +47,13 @@ export default function CursorFollower() {
   const offset = useRef({ x: 0, y: 0 })
   // trail = comet particles chasing the (offset-corrected) core, decorative only
   const trail = useRef(Array.from({ length: TRAIL_SIZE }, () => ({ x: -100, y: -100 })))
+  // per-particle ease, ramping up from EASE_MIN (near core) to EASE_MAX (tail) so the
+  // whole chain snaps into place quickly instead of compounding lag toward the tail
+  const eases = useRef(
+    Array.from({ length: TRAIL_SIZE }, (_, i) =>
+      TRAIL_SIZE === 1 ? EASE_MIN : EASE_MIN + (i / (TRAIL_SIZE - 1)) * (EASE_MAX - EASE_MIN)
+    )
+  )
   const raf = useRef(null)
 
   const [enabled, setEnabled] = useState(false)
@@ -102,13 +110,15 @@ export default function CursorFollower() {
       // The comet chain chases the offset-corrected real target, not the
       // (already-lagging) previous particle's position stacking error on
       // error — each particle eases toward the true pointer, just with
-      // more delay the further back it is in the chain.
+      // more delay the further back it is in the chain. Each particle now
+      // uses its own (higher) ease value so the tail catches up fast too.
       let leadX = realTarget.current.x - offset.current.x
       let leadY = realTarget.current.y - offset.current.y
 
       trail.current.forEach((point, i) => {
-        point.x += (leadX - point.x) * EASE
-        point.y += (leadY - point.y) * EASE
+        const ease = eases.current[i]
+        point.x += (leadX - point.x) * ease
+        point.y += (leadY - point.y) * ease
         const el = trailRefs.current[i]
         if (el) {
           // Shrinks gradually toward the tail for a tapering comet shape.

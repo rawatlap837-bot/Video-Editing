@@ -12,23 +12,28 @@ const headingWords = [
 const steps = [
   {
     title: 'IDEATE:',
-    desc: 'Turn ideas into a clear creative direction. Define the hook, story, message, and visual concept before production begins.'
+    boldLine: 'Turn ideas into a clear creative direction.',
+    desc: 'Define the hook, story, message, and visual concept before production begins.'
   },
   {
     title: 'CREATE:',
-    desc: 'Transform ideas into attention-grabbing visuals. Build powerful scenes, graphics, and storytelling elements that make people stop and watch.'
+    boldLine: 'Transform ideas into attention-grabbing visuals.',
+    desc: 'Build powerful scenes, graphics, and storytelling elements that make people stop and watch.'
   },
   {
     title: 'PRODUCE:',
-    desc: 'Bring every idea to life with motion and sound. Combine animation, video, music, voice, and effects to create an engaging experience.'
+    boldLine: 'Bring every idea to life with motion and sound.',
+    desc: 'Combine animation, video, music, voice, and effects to create an engaging experience.'
   },
   {
     title: 'POLISH:',
-    desc: 'Fine-tune every detail before it goes live. Refine timing, transitions, visuals, audio, and effects until everything feels sharp and professional.'
+    boldLine: 'Fine-tune every detail before it goes live.',
+    desc: 'Refine timing, transitions, visuals, audio, and effects until everything feels sharp and professional.'
   },
   {
     title: 'DELIVER:',
-    desc: 'Deliver content that is ready to perform. Optimize every video for the right platform, screen, format, and audience.'
+    boldLine: 'Deliver content that is ready to perform.',
+    desc: 'Optimize every video for the right platform, screen, format, and audience.'
   },
 ];
 
@@ -147,7 +152,10 @@ export default function Process() {
                     {s.title}
                   </h3>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-muted md:mt-2">{s.desc}</p>
+                <p className="mt-2 text-sm font-semibold leading-relaxed text-white/90">
+                  {s.boldLine}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted">{s.desc}</p>
               </Reveal>
             )
           })}

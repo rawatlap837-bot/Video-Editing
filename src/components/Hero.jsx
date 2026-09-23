@@ -146,8 +146,7 @@ export default function Hero() {
 
         {/* Mobile-only version of the tagline paragraph */}
         <p className={'-mt-2 max-w-md text-sm leading-relaxed tracking-wide text-muted sm:hidden ' + enterClass} style={enterStyle(920)}>
-          WE CUT LONG FORM, SHORT FORM, FACELESS, AI, BRAND FILM, STORYTELLING AND
-          TALKING HEAD VIDEO FOR CREATORS AND BRANDS WHO NEED CONTENT THAT ACTUALLY GETS WATCHED.
+          FROM CONCEPT TO FINAL CUT, WE CREATE FILMS THAT MAKE BRANDS STAND OUT.
         </p>
       </div>
 
