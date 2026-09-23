@@ -72,11 +72,11 @@ export default function Hero() {
                 staggerMs={55}
                 startDelayMs={160}
                 words={accentWords}
-                className="inline-block align-middle font-display text-lime text-xs tracking-wide sm:text-sm md:text-xs lg:text-sm xl:text-base"
+                className="inline-block align-middle font-display text-lime text-[16px] tracking-widest sm:text-base md:text-lg lg:text-xl xl:text-3xl"
               />
             </span>
             <SplitText as="span" eager staggerMs={55} startDelayMs={320} words={line2Words} className="block" />
-            <SplitText as="span" eager staggerMs={55} startDelayMs={480} words={line3Words} className="block" />
+            <SplitText as="span" eager staggerMs={55} startDelayMs={480} words={line3Words} className="block text-lime" />
           </h1>
 
           <div className={'mt-6 flex items-center gap-3 sm:mt-8 sm:gap-4 ' + enterClass} style={enterStyle(680)}>
@@ -95,7 +95,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="flex h-14 flex-1 max-w-xs items-center justify-center rounded-full border border-lime/60 text-xl font-medium tracking-wide text-lime transition-colors hover:bg-lime/10 sm:h-16"
             >
-              See our work
+              Explore Our Work
             </a>
           </div>
 

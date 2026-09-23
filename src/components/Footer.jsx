@@ -31,9 +31,8 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <img src={ATS2} alt="logo" className="h-20 w-auto object-contain" />
               </div>
-              <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-                A video editing studio for creators and brands — long form, short form,
-                faceless, AI, brand film, storytelling and talking head.
+              <p className="mt-4 max-w-xs capitalize text-sm leading-relaxed text-muted">
+                A Video Editing Studio for Creators and Brands: Long Form, Short Form, Faceless, Brand Films, AI, Storytelling, Talking Head and many more...
               </p>
               <BookingButtons className="mt-6" />
             </div>
