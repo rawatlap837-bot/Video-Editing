@@ -66,7 +66,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2">
-          <img src={ATS1} alt="logo" className="h-12 w-auto object-contain" />
+          <img src={ATS1} alt="logo" className="h-16 w-auto object-contain" />
         </a>
 
         {/* Center nav (desktop) */}
